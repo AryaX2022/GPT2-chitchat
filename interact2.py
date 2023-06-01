@@ -120,7 +120,7 @@ def execute(myinput):
     tokenizer = BertTokenizerFast(vocab_file=args.vocab_path, sep_token="[SEP]", pad_token="[PAD]", cls_token="[CLS]")
     # tokenizer = BertTokenizer(vocab_file=args.voca_path)
     #model = GPT2LMHeadModel.from_pretrained(args.model_path)
-    model = GPT2LMHeadModel.from_pretrained('./llmodel')
+    model = GPT2LMHeadModel.from_pretrained('/content/drive/MyDrive/llmodel')
     model = model.to(device)
     model.eval()
     if args.save_samples_path:
