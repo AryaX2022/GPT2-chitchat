@@ -169,7 +169,7 @@ def execute(myinput):
     history.append(response)
     text = tokenizer.convert_ids_to_tokens(response)
     print("chatbot:" + "".join(text))
-    return text #返回response
+    return "".join(text) #返回response
     if args.save_samples_path:
         samples_file.write("chatbot:{}\n".format("".join(text)))
 
